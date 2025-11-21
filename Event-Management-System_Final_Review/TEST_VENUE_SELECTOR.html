@@ -1,0 +1,136 @@
+git init<!DOCTYPE html>
+<html>
+<head>
+    <title>Venue Selector Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .test-box {
+            background: linear-gradient(to right, #3b82f6, #8b5cf6);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .test-box h2 {
+            margin: 0 0 15px 0;
+            font-size: 24px;
+        }
+        .test-box p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .number {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        button {
+            background: white;
+            color: #8b5cf6;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background: #f0f0f0;
+        }
+        .instruction {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .success {
+            background: #10b981;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .error {
+            background: #ef4444;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔍 Venue Selector Debug Test</h1>
+    
+    <div class="test-box">
+        <h2>🔍 DEBUG INFO</h2>
+        <p>✓ Venues loaded: <span class="number">1</span></p>
+        <p>✓ Token: ✅ YES</p>
+        <button onclick="alert('This is what the debug box looks like!')">Log to Console</button>
+        <button onclick="alert('Force reload clicked!')">Force Reload Venues</button>
+    </div>
+    
+    <div class="success">
+        ✅ THIS IS WHAT YOU SHOULD SEE IN YOUR EVENT CREATION FORM!
+    </div>
+    
+    <div class="instruction">
+        <h3>📋 Instructions:</h3>
+        <ol>
+            <li><strong>If you see this purple/blue box above</strong> - THIS is what should appear in your event creation form!</li>
+            <li><strong>If you DON'T see this in your app</strong> - Your browser is showing cached old code</li>
+            <li><strong>Solution:</strong> Clear browser cache</li>
+        </ol>
+        
+        <h3>🔥 How to Clear Cache:</h3>
+        <ol>
+            <li>Go to <code>http://localhost:3000</code></li>
+            <li>Press <strong>Ctrl + Shift + R</strong> (hard refresh)</li>
+            <li>Or press <strong>F12</strong> → Application → Clear Storage → Clear site data</li>
+            <li>Login as admin</li>
+            <li>Click "Tech" → "Create Tech Event"</li>
+            <li>You WILL see the purple/blue debug box!</li>
+        </ol>
+        
+        <h3>✅ What to Look For:</h3>
+        <ul>
+            <li>Purple/blue gradient box (like above)</li>
+            <li>Text: "🔍 DEBUG INFO"</li>
+            <li>Shows "Venues loaded: 1"</li>
+            <li>Two buttons: "Log to Console" and "Force Reload Venues"</li>
+            <li>Below that: Venue dropdown showing "TBI Seminar Hall"</li>
+        </ul>
+    </div>
+    
+    <div class="instruction">
+        <h3>🎯 Step-by-Step Test:</h3>
+        <ol>
+            <li>✅ Backend running on port 5000</li>
+            <li>✅ Frontend running on port 3000</li>
+            <li>✅ Code updated with debug box</li>
+            <li>❌ Browser showing old cached code</li>
+        </ol>
+        
+        <p><strong>Solution: Clear your browser cache!</strong></p>
+        <p>Press <strong>Ctrl + Shift + R</strong> on <code>http://localhost:3000</code></p>
+    </div>
+    
+    <div class="error">
+        ⚠️ IMPORTANT: Don't start backend again! It's already running on port 5000!
+    </div>
+    
+    <script>
+        console.log('=== VENUE SELECTOR TEST ===');
+        console.log('If you see this purple/blue box above, that is EXACTLY what should appear in your event creation form!');
+        console.log('The debug box is impossible to miss - it is large, colorful, and at the top of the form.');
+        console.log('If you do not see it in your app, your browser is showing cached old code.');
+        console.log('Solution: Press Ctrl + Shift + R on http://localhost:3000');
+    </script>
+</body>
+</html>

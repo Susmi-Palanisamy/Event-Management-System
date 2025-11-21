@@ -1,0 +1,83 @@
+===============================================
+🔥 CLEAR BROWSER CACHE - STEP BY STEP 🔥
+===============================================
+
+YOUR BROWSER IS SHOWING OLD CODE!
+You MUST clear the cache to see the new venue selector.
+
+===============================================
+METHOD 1: HARD REFRESH (EASIEST)
+===============================================
+
+1. Go to http://localhost:3000
+2. Press and HOLD: Ctrl + Shift
+3. While holding, press: R
+4. Release all keys
+5. Page will reload with fresh code
+
+===============================================
+METHOD 2: CLEAR ALL CACHE (MOST EFFECTIVE)
+===============================================
+
+1. Press F12 (opens DevTools)
+2. Click "Application" tab (top menu)
+3. On left side, click "Clear storage"
+4. Click "Clear site data" button
+5. Close DevTools (F12 again)
+6. Refresh page (F5)
+
+===============================================
+METHOD 3: INCOGNITO/PRIVATE WINDOW
+===============================================
+
+1. Press: Ctrl + Shift + N (Chrome)
+   OR: Ctrl + Shift + P (Firefox)
+2. Go to: http://localhost:3000
+3. Login as admin
+4. Test venue selector
+
+===============================================
+VERIFY IT WORKED:
+===============================================
+
+After clearing cache, you should see:
+
+1. Login as admin
+2. Go to Admin Dashboard
+3. Click "Tech" category
+4. Click "Create Tech Event"
+5. You WILL see a HUGE PURPLE/BLUE box that says:
+   
+   🔍 DEBUG INFO
+   ✓ Venues loaded: 1
+   ✓ Token: ✅ YES
+   [Log to Console] [Force Reload Venues]
+
+This box is IMPOSSIBLE to miss!
+It's purple/blue gradient, large text, at the TOP of the form.
+
+===============================================
+IF YOU STILL DON'T SEE IT:
+===============================================
+
+The frontend code is NOT updated. Try:
+
+1. Close ALL browser tabs
+2. Stop frontend (Ctrl+C in terminal)
+3. Start frontend: npm start
+4. Wait for "Compiled successfully"
+5. Open NEW browser tab
+6. Go to http://localhost:3000
+7. Clear cache (Ctrl + Shift + R)
+8. Login and test
+
+===============================================
+CURRENT SERVER STATUS:
+===============================================
+
+Backend: Already running on port 5000
+Frontend: Should be on port 3000
+
+DON'T start backend again! It's already running!
+
+===============================================
