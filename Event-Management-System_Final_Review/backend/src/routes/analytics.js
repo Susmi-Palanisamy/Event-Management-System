@@ -256,7 +256,9 @@ router.get('/event/:eventId', authenticateToken, isAdmin, async (req, res) => {
         cancelled: cancelledRegistrations
       },
       revenue,
-      registracd "C:\Users\Susmi.P\OneDrive\Desktop\Event management"tionTimeline
+     registracd "C:\Users\Susmi.P\OneDrive\Desktop\Event management"tionTimeline
+
+
     });
   } catch (error) {
     console.error('Event analytics error:', error);
